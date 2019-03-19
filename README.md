@@ -4,6 +4,14 @@ Indeed.com was founded in 2004 and currently is the highest traffic job website 
 
 Employee ratings in employee reviews have become quite crucial for employers since poor rated companies tend to overpay on salaries by 10%. So, undertaken study has two key objectives, first: to improve the way in which ratings are reflected for each employer and second: to add Pros and Cons for each employer so that user can get better insights without reading all the reviews.
 
+Here's the video explaining our analysis:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=2Ay8LZMy-ec
+" target="_blank"><img src="http://img.youtube.com/vi/2Ay8LZMy-ec/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+
+
 We selected top 4 US airline companies for our analysis, which collectively hold a market share of about 65%. Employee reviews data of about 10,000 reviews was scraped for these companies from Indeed utilizing beautiful soup in Python. A sentiment rating was generated for each review by using natural language processing techniques. Vader lexicon from the NLTK library was used for these purposes. The sentiment rating was scaled on a range of 1 to 5, and then aggregate rating was generated for every employer.
 
 The analysis showed that many of the employer reviews have differing user and scaled sentiment rating. Extreme examples were found where even though the review content suggested sharply negative sentiment about the company, but the user rating was 5 and vice versa.
