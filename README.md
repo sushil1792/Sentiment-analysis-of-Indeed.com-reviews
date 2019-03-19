@@ -1,119 +1,17 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+**Overview:**
 
-\f0\fs24 \cf0 <img src="https://github.com/ArunMichaelDsouza/tensorflow-image-detection/raw/master/icon.png" width="250" height="auto" alt="tensorflow-image-detection icon"/>\
-\
-# tensorflow-image-detection\
-A generic image detection program that uses Google's Machine Learning library, [Tensorflow](https://www.tensorflow.org/) and a pre-trained Deep Learning Convolutional Neural Network model called [Inception](https://research.googleblog.com/2016/03/train-your-own-image-classifier-with.html).\
-\
-This model has been pre-trained for the [ImageNet](http://image-net.org/) Large Visual Recognition Challenge using the data from 2012, and it can differentiate between 1,000 different classes, like Dalmatian, dishwasher etc.\
-The program applies Transfer Learning to this existing model and re-trains it to classify a new set of images.\
-\
-This is a generic setup and can be used to classify almost any kind of image. I created a small demo that classifies two image data sets - my photos and my girlfriend's photos, and returns a prediction score denoting the possibility of it being my image or my girlfriend's image.\
-\
-<br/>\
-\
-## Installation\
-Make sure you have [Python 3](https://www.python.org/downloads/) installed, then install [Tensorflow](https://www.tensorflow.org/install/) on your system, and clone this repo.\
-\
-<br/>\
-\
-## Usage\
-\
-### Prepare the image data sets\
-In order to start the transfer learning process, a folder named ``training_dataset`` needs to be created in the root of the project folder. This folder will contain the image data sets for all the subjects, for whom the classification is to be performed.\
-\
-Create the ``training_dataset`` folder and add the images for all the data sets in the following manner -\
-\
-```javascript\
-/\
-|\
-|\
----- /training_dataset\
-|    |\
-|    |\
-|    ---- /arun\
-|    |    arun1.jpg\
-|    |    arun2.jpg\
-|    |    ...\
-|    |\
-|    |\
-|    ---- /erica\
-|         erica1.jpg\
-|         erica2.jpg\
-|         ...\
-|\
-|     \
-```\
-This enables classification of images between the ``arun`` and ``erica`` data sets.\
-\
-> Make sure to include multiple variants of the subject (side profiles, zoomed in images etc.), the more the images, the better is the result.\
-\
-### Initiate transfer learning\
-Go to the project directory and run -\
-\
-```javascript\
-$ bash train.sh\
-```\
-This script installs the ``Inception`` model and initiates the re-training process for the specified image data sets.\
-\
-Once the process is complete, it will return a training accuracy somewhere between ``85% - 100%``.\
-\
-The ``training summaries``, ``retrained graphs`` and ``retrained labels`` will be saved in a folder named ``tf_files``.\
-\
-### Classify objects\
-\
-```javascript\
-python3 classify.py\
-```\
-\
-This opens up the file dialog using which you can select your input file.\
-\
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/tensorflow-image-detection/master/file-dialog.png"/>\
-\
-Once the input file is selected, the classifier will output the predictions for each data set. A prediction score between ``0.8`` to ``1`` is considered to be optimal.\
-\
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/tensorflow-image-detection/master/cli-output.png"/>\
-\
-<br/>\
-\
-## Results\
-<img src="https://raw.githubusercontent.com/ArunMichaelDsouza/tensorflow-image-detection/master/result.png"/>\
-\
-<br/>\
-\
-## Contributors\
-\
-| [<img src="https://avatars3.githubusercontent.com/u/4924614" width="100px;"/><br /><sub><b>Arun Michael Dsouza</b></sub>](https://github.com/ArunMichaelDsouza)<br />| [<img src="https://avatars3.githubusercontent.com/u/11679543" width="100px;"/><br /><sub><b>Royal Bhati</b></sub>](https://github.com/royalbhati)<br />|\
-| :---: | :---: |\
-\
-<br/>\
-\
-## License\
-MIT License\
-\
-Copyright (c) 2017 Arun Michael Dsouza\
-\
-Permission is hereby granted, free of charge, to any person obtaining a copy\
-of this software and associated documentation files (the "Software"), to deal\
-in the Software without restriction, including without limitation the rights\
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\
-copies of the Software, and to permit persons to whom the Software is\
-furnished to do so, subject to the following conditions:\
-\
-The above copyright notice and this permission notice shall be included in all\
-copies or substantial portions of the Software.\
-\
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\
-SOFTWARE.\
-\
-}
+Indeed.com was founded in 2004 and currently is the highest traffic job website in the United States. It received about 380 million website visits in October 2018. The user on average spends about 6 mins 20 secs and visits 9 pages per visit. Indeed.com currently has more than 4 million employer reviews and it adds more than 55,000 reviews every week.
+
+Employee ratings in employee reviews have become quite crucial for employers since poor rated companies tend to overpay on salaries by 10%. So, undertaken study has two key objectives, first: to improve the way in which ratings are reflected for each employer and second: to add Pros and Cons for each employer so that user can get better insights without reading all the reviews.
+
+We selected top 4 US airline companies for our analysis, which collectively hold a market share of about 65%. Employee reviews data of about 10,000 reviews was scraped for these companies from Indeed utilizing beautiful soup in Python. A sentiment rating was generated for each review by using natural language processing techniques. Vader lexicon from the NLTK library was used for these purposes. The sentiment rating was scaled on a range of 1 to 5, and then aggregate rating was generated for every employer.
+
+The analysis showed that many of the employer reviews have differing user and scaled sentiment rating. Extreme examples were found where even though the review content suggested sharply negative sentiment about the company, but the user rating was 5 and vice versa.
+
+
+
+To test that this Sentiment Rating which is generated through user reviews- is different than user rating or not we did a 2-sided t-test and found that the difference between the two ratings is statistically significant as the p-value is very small. Also, the null hypothesis was rejected with 95% confidence level.
+
+On the basis of above analysis, we recommend following actions to Indeed.com. Firstly, to add an additional feature highlighting sentiment rating score, along with already existing user-rating for each company. This sentiment rating would be the average of the score generated from each review. Most important advantage would be that this would provide additional metrics of evaluation for the user i.e. prospective employee. This feature would also differentiate Indeed.com against its competitors such as Glassdoor.com or Monsterjobs.com. This feature would also provide enhanced protection against fake reviews.  Secondly, recommendation would be to display, for each company, a list of pros and cons generated from all user reviews of that company (by using term frequency matrix). This feature would help prospective employees to associate with the culture of the company and make the right move.
+
+The underlying objective of implementing these recommendations would be to improve the overall user experience, which will generate web traffic, increase user engagement hence increased duration per visit, and more job ads listing by employer because of the job seeker&#39;s trust in the platform.
